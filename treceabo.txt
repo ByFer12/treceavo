@@ -1,0 +1,67 @@
+13
+Algoritmo Ejercicio13
+	hacer
+	Escribir '1. Sumar 2 Numeros'
+	Escribir '2. Dividir 2 Numeros'
+	Escribir "3. Restar 2 numeros"
+	Escribir "4. multiplicar 2 numeros"
+	Escribir '5. Salir'
+	Escribir 'Escoga una de las Opciones'
+	Leer num
+		
+	evaluar (num) hacer
+		1:
+			var num1
+			var num2
+			Escribir 'Ingresa el 1er. Numero'
+			Leer num1
+			Escribir 'Ingresa el 2do. Numero'
+			Leer num2
+			res = num1 + num2
+			
+			Escribir 'La suma de ',num1,' y de ',num2,' es ',res
+		2:
+			var d1
+			var d2
+			Escribir 'Ingresa el 1er. Numero'
+			Leer d1
+			Escribir 'Ingresa el 2do. Numero'
+			Leer d2
+			Si d2 < 0 o d2 > 0 Entonces
+				div = d1/d2
+			SiNo
+				Escribir 'El 2do. Numero no puede ser 0'
+			Fin Si
+			
+			Escribir 'La División de ',d1,' entre ',d2,' es ',div
+		3:
+
+			var d1
+			var d2
+			Escribir 'Ingresa el 1er. Numero'
+			Leer d1
+			Escribir 'Ingresa el 2do. Numero'
+			Leer d2
+				var resta = d1-d2
+			mostrar(La resta es "resta")
+		4:
+			
+			var d1
+			var d2
+			Escribir 'Ingresa el 1er. Numero'
+			Leer d1
+			Escribir 'Ingresa el 2do. Numero'
+			Leer d2
+				var mult = d1*d2
+			mostrar(La resta es "mult")
+		5:
+			num=1
+	
+
+		De Otro Modo:
+			Escribir 'Has Salido'
+	mientras(num!=1)
+	Fin Segun
+FinAlgoritmo
+
+
